@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  background: url('./assets/images/start-screen-gradient-background.png');
+  background: url('../../assets/images/start-screen-gradient-background.png');
   background-size: auto;
   background-position: top;
   min-height: 180px;
@@ -68,7 +68,7 @@ body {
 }
 
 .not-only {
-  background: url('./assets/images/start-screen-gradient-background.png');
+  background: url('../../assets/images/start-screen-gradient-background.png');
   background-size: auto;
   background-position: bottom;
   min-height: 728px;
@@ -397,7 +397,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 350px;
-  background: url('./assets/images/footer-background.png');
+  background: url('../../assets/images/footer-background.png');
 }
 
 .footer-wrapp {
