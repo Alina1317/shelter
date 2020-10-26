@@ -1,0 +1,323 @@
+input, button {
+  font-family: inherit;
+}
+
+*{
+  font-family: 'Arial', 'Georgia', sans-serif, serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 40px;
+}
+
+.header-logo__title {
+  color: #545454;
+  font: normal normal 32px/110% 'Georgia', serif;
+  letter-spacing: 0.06em;
+  margin-bottom: 9px;
+}
+
+.header-logo__subtitle {
+  color: #292929;
+  font: normal normal 13px/15px 'Arial', sans-serif;
+  letter-spacing: 0.1em;
+  margin-left: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  width: 443px;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.nav-menu__link {
+  color: #545454;
+  text-decoration: none;
+  font: normal normal 15px/160% 'Arial', sans-serif;
+}
+
+.active {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.nav-menu__link:hover {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.disable:hover {
+  cursor: default;
+  border-bottom: none;
+}
+
+.friends {
+  min-height: 1342px;
+  background: #f6f6f6;
+}
+
+.friends-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friends-content__title {
+  font: normal normal 35px/130% 'Georgia', serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 81px 0 59px 0;
+  text-align: center;
+}
+
+.friends-content__card {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.friends-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-foto-katrine,
+.card-foto-jennifer,
+.card-foto-woody,
+.card-foto-sophia,
+.card-foto-timmy,
+.card-foto-charly,
+.card-foto-scarlett,
+.card-foto-freddie {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+  border-radius: 9px;
+  width: 270px;
+}
+
+.card-foto-katrine:hover,
+.card-foto-jennifer:hover,
+.card-foto-woody:hover,
+.card-foto-sophia:hover,
+.card-foto-timmy:hover,
+.card-foto-charly:hover,
+.card-foto-scarlett:hover,
+.card-foto-freddie:hover {
+  cursor: pointer;
+}
+
+.card-foto-katrine__img,
+.card-foto-jennifer__img,
+.card-foto-woody__img,
+.card-foto-sophia__img,
+.card-foto-timmy__img,
+.card-foto-charly__img,
+.card-foto-scarlett__img,
+.card-foto-freddie__img {
+  margin-bottom: 30px;
+}
+
+.card-foto-katrine__img:hover,
+.card-foto-jennifer__img:hover,
+.card-foto-woody__img:hover,
+.card-foto-sophia__img:hover,
+.card-foto-timmy__img:hover,
+.card-foto-charly__img:hover,
+.card-foto-scarlett__img:hover,
+.card-foto-freddie__img:hover {
+  background-color: #f0f0f0;
+}
+
+.card-foto-katrine__subheading,
+.card-foto-jennifer__subheading,
+.card-foto-woody__subheading,
+.card-foto-sophia__subheading,
+.card-foto-timmy__subheading,
+.card-foto-charly__subheading,
+.card-foto-scarlett__subheading,
+.card-foto-freddie__subheading {
+  font: normal normal 20px/23px 'Georgia', serif;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-bottom: 30px;
+}
+
+.btn__friends {
+  font: normal normal 17px/130% 'Georgia', serif;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: ;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  padding: 13px 43px 13px 43px;
+  margin-bottom: 30px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn__friends:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.our-friends-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.friends-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.button-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 28%;
+}
+
+.btn__nav {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+  background: #f1cdb3;
+  border: 2px solid #f1cdb3;
+  font: normal normal 20px/115% 'Georgia', serif;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+
+.doubleago,
+.ago {
+  border: 2px solid #CDCDCD;
+  background: none;
+}
+
+.doubleago:hover,
+.ago:hover {
+  cursor: default;
+}
+
+.next,
+.doublenext {
+  background: none;
+}
+
+.num:hover,
+.next:hover,
+.doublenext:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background: url('../../assets/images/footer-background.png');
+}
+
+.footer-wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+}
+
+.footer-contacts,
+.footer-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-contacts {
+  width: 280px;
+  height: 285px;
+}
+
+.footer-location {
+  width: 305px;
+  height: 273px;
+}
+
+.footer-contacts__mail,
+.footer-contacts__phone,
+.footer-location__boston,
+.footer-location__london {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contacts__mail-foto {
+  margin: 0 20px 0 0;
+}
+
+.footer-contacts__phone-number {
+  margin: 0 20px 8px 0;
+}
+
+.footer-location__title {
+  margin-left: 2px;
+}
+
+.footer-contacts__title,
+.footer-location__title {
+  font: normal normal 35px/130% 'Georgia', serif;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.footer-location__boston-address {
+  margin: 0 20px 1px 0;
+}
+
+.footer-location__london-address {
+  margin: 0 20px 9px 0;
+}
+
+.london__address { 
+  margin-bottom: 8px;
+}
+
+.contact__email,
+.contact__phone,
+.boston__address,
+.london__address {
+  font: normal normal 20px/115% 'Georgia', serif;
+  color: #F1CDB3;
+  letter-spacing: 0.06em;
+}
+
+.contact__phone {
+  margin-bottom: 9px;
+}
+
+.footer-puppy {
+  margin-top: 37px;
+}

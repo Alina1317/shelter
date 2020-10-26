@@ -2,23 +2,26 @@ input, button {
   font-family: inherit;
 }
 
-body {
+*{
   font-family: 'Arial', 'Georgia', sans-serif, serif;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1280px;
+  margin: 0;
 }
 
 .wrapper {
   min-height: 908px;
-  /*max-width: 1200px;
-  margin: 0 auto;*/
+}
+
+.wrap {
+  background: url('../../assets/images/start-screen-gradient-background.png');
+  background-size: cover;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .header {
-  background: url('../../assets/images/start-screen-gradient-background.png');
-  background-size: auto;
-  background-position: top;
   min-height: 180px;
   display: flex;
   align-items: center;
@@ -28,7 +31,7 @@ body {
 .header-logo {
   display: flex;
   flex-direction: column;
-  margin: 0px 0 21px 40px;
+  margin: 0 0 0 40px;
 }
 
 .header-logo__title {
@@ -53,7 +56,7 @@ body {
   margin-right: 40px;
 }
 
-.nav-menu__link {
+a {
   color: #cdcdcd;
   text-decoration: none;
   font: normal normal 15px/160% 'Arial', sans-serif;
@@ -63,32 +66,30 @@ body {
   border-bottom: 3px solid #f1cdb3;
 }
 
+.disable:hover {
+  cursor: default;
+  border-bottom: none;
+}
+
 .nav-menu__link:hover {
   border-bottom: 3px solid #f1cdb3;
 }
 
 .not-only {
-  background: url('../../assets/images/start-screen-gradient-background.png');
-  background-size: auto;
-  background-position: bottom;
   min-height: 728px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
 }
 
 .not-only-wrap {
   display: flex;
-  margin: auto;
-  align-items: start;
-  max-width: 1200px;
-  /*justify-content: space-around;*/
 }
 
 .not-only-content {
-  margin-top: 127px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 164px 29px 0 40px;
 }
 
 .not-only-content__title {
@@ -117,8 +118,7 @@ body {
 }
 
 .btn__make-friends:hover {
-  background: #fff;
-  border: 2px solid #f1cdb3;
+  background: #fddcc4;
 }
 
 .about {
@@ -189,6 +189,12 @@ body {
   justify-content: space-between;
 }
 
+.friends-cards {
+  display: flex;
+  width: 82.5%;
+  justify-content: space-between;
+}
+
 .card-foto-cat,
 .card-foto-puppy,
 .card-foto-dog {
@@ -200,6 +206,12 @@ body {
   width: 270px;
 }
 
+.card-foto-cat:hover,
+.card-foto-puppy:hover,
+.card-foto-dog:hover {
+  cursor: pointer;
+}
+
 .card-foto-cat,
 .card-foto-puppy {
   margin-right: 37px;
@@ -209,6 +221,12 @@ body {
 .card-foto-puppy__jennifer,
 .card-foto-dog__woody {
   margin-bottom: 30px;
+}
+
+.card-foto-cat__katrine:hover,
+.card-foto-puppy__jennifer:hover,
+.card-foto-dog__woody:hover {
+  background-color: #f0f0f0;
 }
 
 .card-foto-cat__subheading,
@@ -235,7 +253,8 @@ body {
 }
 
 .btn__friends:hover {
-  background: #f1cdb3;
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
 }
 
 .btn__back,
@@ -250,7 +269,8 @@ body {
 
 .btn__back:hover,
 .btn__forward:hover {
-  background:#f1cdb3;
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
 }
 
 .btn__get-to-know {
@@ -267,8 +287,7 @@ body {
 }
 
 .btn__get-to-know:hover {
-  background: #fff;
-  border: 2px solid #f1cdb3;
+  background: #fddcc4;
 }
 
 .help {
@@ -411,14 +430,17 @@ body {
 .footer-location {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .footer-contacts {
   width: 280px;
+  height: 285px;
 }
 
 .footer-location {
   width: 305px;
+  height: 273px;
 }
 
 .footer-contacts__mail,
@@ -426,6 +448,20 @@ body {
 .footer-location__boston,
 .footer-location__london {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contacts__mail-foto {
+  margin: 0 20px 0 0;
+}
+
+.footer-contacts__phone-number {
+  margin: 0 20px 8px 0;
+}
+
+.footer-location__title {
+  margin-left: 2px;
 }
 
 .footer-contacts__title,
@@ -433,6 +469,18 @@ body {
   font: normal normal 35px/130% 'Georgia', serif;
   letter-spacing: 0.06em;
   color: #fff;
+}
+
+.footer-location__boston-address {
+  margin: 0 20px 1px 0;
+}
+
+.footer-location__london-address {
+  margin: 0 20px 9px 0;
+}
+
+.london__address { 
+  margin-bottom: 8px;
 }
 
 .contact__email,
@@ -445,7 +493,7 @@ body {
 }
 
 .contact__phone {
-
+  margin-bottom: 9px;
 }
 
 .footer-puppy {
