@@ -321,3 +321,74 @@ input, button {
 .footer-puppy {
   margin-top: 37px;
 }
+
+@media(max-width: 768px) {
+  .header-logo {
+    margin: 0 0 0 30px;
+  }
+
+  .nav-menu {
+    margin-right: 31px;
+  }
+
+  .friends-content__title {
+    margin: 81px 0 29px 0;
+  }
+
+  .friends-content__card {
+    width: 660px;
+  }
+
+  .friends-cards {
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  .card-foto-katrine,
+  .card-foto-jennifer,
+  .card-foto-woody,
+  .card-foto-sophia,
+  .card-foto-timmy,
+  .card-foto-charly,
+  .card-foto-scarlett,
+  .card-foto-freddie {
+    margin-bottom: 30px;
+  }
+
+  .our-friends-cards {
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+
+  .card-foto-scarlett,
+  .card-foto-freddie {
+    display: none;
+  }
+
+  .friends-nav {
+    margin-bottom: 76px;
+  }
+
+  .button-navigation {
+    width: 51.3%;
+  }
+
+  .footer-wrapp {
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer-contacts {
+    margin: 8px 0 0 3px;
+  }
+
+  .footer-location {
+    margin-top: 9px; 
+  }
+
+  .footer-puppy {
+    display: flex;
+    margin-top: 34px;
+  }
+}
