@@ -210,6 +210,8 @@ a {
 .card-foto-puppy:hover,
 .card-foto-dog:hover {
   cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .card-foto-cat,
