@@ -96,12 +96,13 @@ a {
   font: normal normal 44px/130% 'Georgia', serif;
   color: #fff;
   margin-bottom: 41px;
+  max-width: 310px;
 }
 
 .not-only-content__subtitle {
   color: #cdcdcd;
   font: normal normal 15px/160% 'Arial', sans-serif;
-  width: 474px;
+  max-width: 474px;
   margin-bottom: 41px;
 }
 
@@ -119,6 +120,11 @@ a {
 
 .btn__make-friends:hover {
   background: #fddcc4;
+}
+
+.not-only-img {
+  display: flex;
+  max-width: 56.5%;
 }
 
 .about {
@@ -148,19 +154,19 @@ a {
   font: normal normal 35px/130% 'Georgia', serif;
   letter-spacing: 0.06em;
   color: #545454;
-  width: 380px;
+  max-width: 380px;
 }
 
 .about-content-pets__subtitle {
   color: #4c4c4c;
   font: normal normal 15px/160% 'Arial', sans-serif;
-  width: 430px;
+  max-width: 430px;
 }
 
 .about-content-pets__subheading {
   color: #4c4c4c;
   font: normal normal 15px/160% 'Arial', sans-serif;
-  width: 430px;
+  max-width: 430px;
 }
 
 .friends {
@@ -210,8 +216,7 @@ a {
 .card-foto-puppy:hover,
 .card-foto-dog:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
-  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card-foto-cat,
@@ -228,7 +233,11 @@ a {
 .card-foto-cat__katrine:hover,
 .card-foto-puppy__jennifer:hover,
 .card-foto-dog__woody:hover {
-  background-color: #f0f0f0;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);*/
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 9px 9px 0px 0px;
 }
 
 .card-foto-cat__subheading,
@@ -313,6 +322,7 @@ a {
 
 .help-shelter__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1027px;
   margin-bottom: 57px;
@@ -331,7 +341,6 @@ a {
 .help-shelter__icon {
     margin-bottom: 29px;
 }
-
 
 .shelter-help {
   display: flex;
@@ -363,6 +372,7 @@ a {
   display: flex;
   align-items: center;
   width: 947px;
+  padding: 0 30px;
   justify-content: space-around;
 }
 
@@ -373,12 +383,13 @@ a {
 .donation-info {
   display: flex;
   flex-direction: column;
-  width: 380px;
-  height: 300px;
+  max-width: 380px;
+  min-height: 300px;
 }
 
 .donation-info__title {
   font: normal normal 35px/130% 'Georgia', serif;
+  max-width: 85%;
   letter-spacing: 0.06em;
   color: #545454;
   margin-bottom: 20px;
@@ -386,6 +397,7 @@ a {
 
 .donation-info__subtitle {
   font: normal normal 15px/110% 'Georgia', serif;
+  max-width: 380px;
   letter-spacing: 0.06em;
   color: #545454;
   margin-bottom: 20px;
@@ -397,8 +409,8 @@ a {
   justify-content: space-evenly;
   align-items: center;
   background: #F1CDB3;
-  width: 349px;
-  height: 43px;
+  max-width: 349px;
+  min-height: 43px;
   border-radius: 9px;
   margin-bottom: 20px;
 }
@@ -410,6 +422,7 @@ a {
 }
 
 .legal__info {
+  max-width: 96%;
   color: #B2B2B2;
   font: normal italic 12px/18px 'Arial', sans-serif;
 }
@@ -426,6 +439,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
+  padding: 0 30px;
 }
 
 .footer-contacts,
@@ -436,13 +450,13 @@ a {
 }
 
 .footer-contacts {
-  width: 280px;
-  height: 285px;
+  max-width: 280px;
+  min-height: 285px;
 }
 
 .footer-location {
-  width: 305px;
-  height: 273px;
+  max-width: 305px;
+  min-height: 273px;
 }
 
 .footer-contacts__mail,
@@ -499,5 +513,108 @@ a {
 }
 
 .footer-puppy {
+  display: flex;
   margin-top: 37px;
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .header {
+    min-height: 120px;
+  }
+
+  .header-logo {
+    margin: 0 0 0 3.9%;
+  }
+
+  .nav-menu {
+    margin-right: 3.9%;
+  }
+
+  .not-only {
+    min-height: 1045px;
+  }
+
+  .not-only-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .not-only-content {
+    margin: 31px 0 0 15px;
+  }
+
+  .not-only-content__title {
+    margin-bottom: 42px;
+  }
+
+  .btn__make-friends {
+    margin: 0 0 0 125px;
+  }
+
+  .not-only-img {
+    max-width: 73.9%;
+    margin: 0 0 0 137px;
+  }
+
+  .about {
+    min-height: 1048px;
+    align-items: stretch;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+
+  .about-content-pets__foto {
+    margin-bottom: 38px;
+  }
+
+  .help {
+    min-height: 779px;
+  }
+
+  .help-shelter__list {
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  .donation {
+    min-height: 783px;
+  }
+
+  .donation-content {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .donation-img {
+    margin-bottom: 58px;
+  }
+
+  .donation-info {
+    margin-top: 39px;
+  }
+
+  .footer {
+    min-height: 639px;
+  }
+
+  .footer-wrapp {
+    justify-content: space-around;
+  }
+
+  .footer-contacts {
+    margin-left: 3px;
+  }
+
+  .footer-contacts,
+  .footer-location {
+    margin-top: 9px;
+  }
+
+  .footer-puppy {
+    margin-top: 33px;
+  }
 }
